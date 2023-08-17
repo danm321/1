@@ -1,0 +1,193 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and text alignment */
+body {
+    background-color: white;
+    font-family: "Microsoft New Tai Lue", sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 230px;
+}
+
+#name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+#home-button {
+    background-color: white;
+    border: none;
+    padding: 0;
+    font-family: "Source Serif 4 Variable", serif;
+    font-weight: bold;
+    font-size: 34px;
+    cursor: pointer;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    padding: 0px 30px;
+}
+
+#home-button::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70px; /* Adjust the height as needed */
+    background-color: #434343; /* Color of the vertical line */
+    position: absolute;
+    right: 00px; /* Move the line to the right by -30px */
+    top: 0;
+}
+
+#last-name {
+    margin: 0;
+    padding: 5px;
+    font-family: "Source Serif 4 Variable", serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#last-name::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 100%;
+    width: 1px;
+    background-color: #434343;
+}
+
+#buttons-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.category-button {
+    padding: 5px 30px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+    color: darkgrey;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 60px; /* Updated margin-right to 60px */
+}
+
+.category-button-selected {
+    padding: 5px 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+    color: #434343; /* Dark grey color for selected tab */
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-right: 60px; /* Updated margin-right to 60px */
+    border-bottom: 1px solid #434343; /* Add thin bottom border for underline effect */
+}
+
+#contact-button {
+    padding: 5px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #434343;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Video containers */
+#video-container, #second-video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 700px; /* Lock the width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 100px;
+}
+
+#video-text-container, #second-video-text-container {
+    font-size: 20px;
+    margin-right: 90px;
+    text-align: left;
+    height: 300px; /* Lock the height */
+    width: 100px; /* Lock the width */
+}
+
+#video-text, #second-video-text {
+    font-weight: bold;
+}
+
+#additional-text-container, #second-additional-text-container {
+    height: 14px;
+    width: 100px;
+    padding: 0px 0px;
+}
+
+#description-text-container, #second-description-text-container {
+    height: 60px;
+    width: 150px;
+    padding: 15px 0px;
+}
+
+#additional-text, #description-text, #second-additional-text, #second-description-text {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+video {
+    width: 600px;
+}
+
+/* Shift video container to the left by 100px and down by 50px */
+#video-container, #second-video-container {
+    transform: translate(-80px, 70px);
+}
+
+#empty-box {
+    width: 20px;
+    height: 0px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1520px) {
+    header {
+        padding: 10px 50px;
+    }
+    
+    #buttons-container .category-button {
+        padding: 5px 10px;
+        margin-right: 12px;
+    }
+
+    .category-button-selected {
+        padding: 5px 10px;
+        margin-right: 12px;
+        border-bottom: 1px solid #434343;
+    }
+    
+    #video-container, #second-video-container {
+        transform: translate(0px, 70px);
+}
