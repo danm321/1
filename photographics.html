@@ -25,6 +25,18 @@
     <div class="photo-banner">
         <img src="Files/photobanner.png" alt="Photo Banner">
     </div>
+    
+    <div class="sub-cat-buttons-container">
+        <button class="sub-cat-button" onclick="scrollToSubCategory('general-photography')">General Photography</button>
+        <button class="sub-cat-button" onclick="scrollToSubCategory('production-photography')">Production Photography (BTS)</button>
+        <button class="sub-cat-button" onclick="scrollToSubCategory('graphic-design')">Graphic Design</button>
+    </div>
+    
+<!------------------ General Photos --------------------->
+    <div id="general-photography" class="sub-cat-header-container">
+        <p class="sub-cat-title">General Photography</p>
+        <hr class="sub-cat-dividing-line">
+    </div>
 
     <div class="photo-container">
         
@@ -36,7 +48,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Earthshine</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2020</p>
+                    <p class="date-text">2020</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text">An HDR composite intended to reveal the very faint and often unnoticed dark side of a crescent moon.</p>
@@ -59,7 +71,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Cumulus</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2018</p>
+                    <p class="date-text">2018</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text">An image highlighting the beautiful structural complexity of a cloud.</p>
@@ -80,7 +92,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Lighthouse</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2017</p>
+                    <p class="date-text">2017</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text"></p>
@@ -102,7 +114,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Vancouver Skyline</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2019</p>
+                    <p class="date-text">2019</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text">A panoramic, HDR composite of downtown Vancouver silhouetted against a magnificent sky.</p>
@@ -113,6 +125,59 @@
         </div>
     </div>
     
+<!------------------ BTS --------------------->
+    <div id="production-photography" class="sub-cat-header-container">
+        <p class="sub-cat-title">Production Photography (BTS)</p>
+        <hr class="sub-cat-dividing-line">
+    </div>
+
+    <div class="photo-container">
+        
+        <div class="top-photo-container">
+        </div>
+                
+        <div class="side-photo-container">
+        
+            <div class="photo-text-container">
+                <p style="font-size: 20px"><strong></strong></p>
+                <div class="additional-photo-text-container">
+                    <p class="date-text"></p>
+                </div>
+                <div class="description-text-container">
+                    <p class="description-text"></p>
+                </div>
+            </div>
+            
+            <img src="Files/dancer.png" alt="Dancer Photo">
+        </div>
+    </div>
+
+    <div class="photo-container">
+        
+        <div class="top-photo-container">
+        </div>
+                
+        <div class="side-photo-container">
+        
+            <div class="photo-text-container">
+                <p style="font-size: 20px"><strong></strong></p>
+                <div class="additional-photo-text-container">
+                    <p class="date-text"></p>
+                </div>
+                <div class="description-text-container">
+                    <p class="description-text"></p>
+                </div>
+            </div>
+            
+            <img src="Files/musicvidgroup.png" alt="Group Photo">
+        </div>
+    </div>
+<!------------------ Graphic Design --------------------->
+    <div id="graphic-design" class="sub-cat-header-container">
+        <p class="sub-cat-title">Graphic Design</p>
+        <hr class="sub-cat-dividing-line">
+    </div>
+
     <div class="photo-container">
         
         <div class="top-photo-container">
@@ -123,7 +188,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Tired</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2023</p>
+                    <p class="date-text">2023</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text"></p>
@@ -144,7 +209,7 @@
             <div class="photo-text-container">
                 <p style="font-size: 20px"><strong>Earth Eye Logo</strong></p>
                 <div class="additional-photo-text-container">
-                    <p class="additional-text">2022</p>
+                    <p class="date-text">2022</p>
                 </div>
                 <div class="description-text-container">
                     <p class="description-text"></p>
@@ -155,5 +220,16 @@
         </div>
     </div>
     
+    <script>
+        function scrollToSubCategory(subCatId) {
+            const subCatElement = document.getElementById(subCatId);
+            if (subCatElement) {
+                window.scrollTo({
+                    top: subCatElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
 </body>
 </html>
