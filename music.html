@@ -56,6 +56,21 @@
             Your browser does not support the audio tag.
         </audio>
     </div>
-    
+
+    <script>
+        window.addEventListener('load', () => {
+            const header = document.querySelector('header');
+            const textContainer = document.querySelectorAll('.music-container, .writing-container, .text-container, .film-banner, .photo-banner, .video-container, .photo-container, .sub-cat-header-container, .sub-cat-buttons-container, .contact-content-container');
+            
+            header.style.opacity = '1';
+        
+            setTimeout(() => {
+                textContainer.forEach(element => {
+                    element.style.opacity = '1';
+                });
+            }, 150); // Delay the animation for 1 second after the page loads
+        });
+    </script>
+
 </body>
 </html>

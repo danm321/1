@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 230px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 .name-container {
@@ -128,6 +130,11 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.music-container, .writing-container, .text-container, .film-banner, .photo-banner, .video-container, .photo-container, .sub-cat-header-container, .sub-cat-buttons-container, .contact-content-container {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
 }
 
 /* Video containers */
@@ -350,6 +357,8 @@ video {
     position: relative;
     transform: translate(0px, -37px);
     z-index: 2; /* Set a higher z-index value */
+    opacity: 0;
+    transition: opacity 1.1s ease-in;
 }
 
 #arrow-image {
